@@ -13,7 +13,7 @@ export default function About(props){
 
     return(
         <>
-        <br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br>
             <button 
             disabled={currentImage===0}
             onClick={(e) => setCurrentImage(v => v - 1)}
