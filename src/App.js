@@ -9,9 +9,11 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import SelectedProducts from "./components/selectedProducts";
 
-import a from "./pictures/fw7a5605.jpg";
-import b from "./pictures/m03106051099.jpg";
-import c from "./pictures/m03110051099.jpg";
+import a from "./pictures/a.jpg";
+import b from "./pictures/b.jpg";
+import c from "./pictures/c.jpg";
+import d from "./pictures/d.jpg";
+
 
 
 
@@ -30,6 +32,7 @@ function App() {
               <img src={a} alt="a"></img>
               <img src={b} alt="b"></img>
               <img src={c} alt="c"></img>
+              <img src={d} alt="d"></img>
              </About>
            </Route>
            <Route path="/PAYMENT">
