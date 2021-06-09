@@ -13,7 +13,6 @@ export default function About(props) {
     <>
     <br></br><br></br>
       <button
-        style={{ fontSize: 50 }}
         disabled={CurentImage === 0}
         onClick={(e) => setCurentImage((v) => v - 1)}
       >
@@ -21,7 +20,6 @@ export default function About(props) {
       </button>
 
       <button
-        style={{ fontSize: 50 }}
         disabled={CurentImage >= numberImage - 1}
         onClick={(e) => setCurentImage((v) => v + 1)}
       >

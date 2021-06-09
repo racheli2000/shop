@@ -11,7 +11,7 @@ import SelectedProducts from "./components/selectedProducts";
 
 import a from "./pictures/a.jpg";
 import b from "./pictures/b.jpg";
-import c from "./pictures/c.jpg";
+import c from "./pictures/c.webp";
 import d from "./pictures/d.jpg";
 
 
@@ -29,10 +29,10 @@ function App() {
            </Route>
            <Route path="/ABOUT">
              <About>
-              <img src={a} alt="a"></img>
+              <img src={a} alt="a" style={{width:1000}}></img>
               <img src={b} alt="b"></img>
-              <img src={c} alt="c"></img>
-              <img src={d} alt="d"></img>
+              <img src={c} alt="c" style={{width:800}}></img>
+              <img src={d} alt="d" style={{width:1000}}></img>
              </About>
            </Route>
            <Route path="/PAYMENT">
