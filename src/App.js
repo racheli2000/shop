@@ -27,9 +27,9 @@ function App() {
            </Route>
            <Route path="/ABOUT">
              <About>
-              <img src={a}></img>
-              <img src={b}></img>
-              <img src={c}></img>
+              <img src={a} alt="a"></img>
+              <img src={b} alt="b"></img>
+              <img src={c} alt="c"></img>
              </About>
            </Route>
            <Route path="/PAYMENT">
