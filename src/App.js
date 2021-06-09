@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Home from "./components/home";
+import Manue from "./components/manue";
 import ShowProducts from "./components/showProducts";
 import Payment from "./components/payment";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -8,6 +8,7 @@ import About from "./components/about";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import SelectedProducts from "./components/selectedProducts";
+import Home from "./components/home";
 
 import a from "./pictures/a.jpg";
 import b from "./pictures/b.jpg";
@@ -22,7 +23,7 @@ function App() {
     <div className="App">
       <Provider store={store}>
        <Router> 
-         <Home></Home>
+         <Manue></Manue>
          <Switch>
            <Route path="/SHOWPRODUCTS">
              <ShowProducts />
@@ -41,9 +42,9 @@ function App() {
            <Route path="/SELECTEDPRODUCTS">
              <SelectedProducts/>
            </Route>
-           {/* <Route path="/">
+           <Route path="/">
              <Home />
-           </Route> */}
+           </Route>
          </Switch>
        </Router> 
        </Provider>

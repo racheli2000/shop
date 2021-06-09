@@ -1,15 +1,11 @@
-import { Link } from "react-router-dom";
+import homeImg from "../pictures/home.jpg";
 
 export default function Home() {
   return (
     <>
-      <Link to="/"> HOME </Link>
-
-      <Link to="/SHOWPRODUCTS"> SHOW PRODUCTS </Link>
-
-      <Link to="/ABOUT"> ABOUT </Link>
-
-      <Link to="/SELECTEDPRODUCTS"> MY PRODUCTS</Link>
+      <br></br>
+      <br></br>
+      <img src={homeImg} style={{ height: 500 }}></img>
     </>
   );
 }
