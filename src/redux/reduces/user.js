@@ -1,7 +1,6 @@
 
 
 import produce from "immer";
-import actions from "../action";
 import execHandler from "./reducerUtils";
 
 const initialState = {
@@ -10,8 +9,8 @@ const initialState = {
 
 const user = {
 
-   setAllUsers(){
-       state.AllUsers= actions.payLoad.users;
+   setAllUsers(state, action){
+       state.AllUsers= action.payLoad.users;
    }
 
 };

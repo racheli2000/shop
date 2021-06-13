@@ -9,7 +9,7 @@ import user from './reduces/user';
 
 const reducer= combineReducers({products, order, user});
 
-const store= createStore(reducer, (applyMiddleware(  getUsers)));
+const store= createStore(reducer, (applyMiddleware( getOrders, setOrder, getUsers)));
 
 window.store= store;
 export default store;
