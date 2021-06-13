@@ -17,8 +17,9 @@ export default function User() {
     <>
       <button onClick={getUsers}>get users</button>
       {flag == true &&
-        Data.AllOrders.map((user, index) => {
+        Data.AllUsers.map((user, index) => {
           <p>
+            user number {index+1}:
             {user.name}
             <br></br>
             {user.password}

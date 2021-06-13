@@ -3,7 +3,7 @@ import actions from "../action";
 
 export const getUsers = (store) => (next) => (action) => {
   if (action.type == "GET_ALL_USERS") {
-    fetch(`https://localhost:3001/getAllUsers`, { method: "GET" })
+    fetch(`https://localhost:3001/getAllUsers`, { "method": "GET" })
     .then(response => response.json())
     .then(result =>{
         store.dispatch(actions.setAllUsers(result));
@@ -17,7 +17,7 @@ return next(action)
 
 export const getOrders = (store) => (next) => (action) => {
   if (action.type == "GET_ALL_ORDERS") {
-    fetch(`https://localhost:3001/getAllOrders`, { method: "GET" })
+    fetch(`https://localhost:3001/getAllOrders`, { "method": "GET" })
       .then((response) => response.json())
       .then((result) => {
         store.dispatch(actions.getOrders(result));
@@ -27,6 +27,34 @@ export const getOrders = (store) => (next) => (action) => {
   }
   return next(action);
 };
+
+// export const getUsers = (store) => (next) => (action) => {
+
+//   const dispatch= useDispatch();
+
+//     if (action.type == "GET_ALL_USERS") {
+//       var myHeaders = new Headers();
+//       myHeaders.append("Content-Type", "application/json");
+      
+//       // var raw = JSON.stringify({"name":"Yael","password":"123456789","mail":"yael@gmail.com"});
+      
+//       var requestOptions = {
+//         method: 'GET',
+//         headers: myHeaders,
+//         // body: raw,
+//         redirect: 'follow'
+//       };
+      
+//       fetch("localhost:3001/getAllUsers", requestOptions)
+//         .then(response => response.text())
+//         .then(result => console.log(result))
+//         .then(result =>{
+//               store.dispatch(actions.setAllUsers(result));})
+//         .catch(error => console.log('error', error));
+//     }
+//     return next(action);
+  
+// };
 
 
 

@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        {/* <User/> */}
-       <Router> 
+        <User/>
+       {/* <Router> 
          <Manue></Manue>
          <Switch>
            <Route path="/SHOWPRODUCTS">
@@ -52,7 +52,7 @@ function App() {
              <Home />
            </Route>
          </Switch>
-       </Router> 
+       </Router>  */}
        </Provider>
      </div>
   );

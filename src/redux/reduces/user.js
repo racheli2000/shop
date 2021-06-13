@@ -10,7 +10,7 @@ const initialState = {
 const user = {
 
    setAllUsers(state, action){
-       state.AllUsers= action.payLoad.users;
+       state.AllUsers= action.payLoad;
    }
 
 };
