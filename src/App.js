@@ -14,6 +14,8 @@ import a from "./pictures/a.jpg";
 import b from "./pictures/b.jpg";
 import c from "./pictures/c.webp";
 import d from "./pictures/d.jpg";
+import Order from "./components/order";
+import User from "./components/user";
 
 
 
@@ -22,7 +24,8 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-       <Router> 
+        <User/>
+       {/* <Router> 
          <Manue></Manue>
          <Switch>
            <Route path="/SHOWPRODUCTS">
@@ -42,11 +45,14 @@ function App() {
            <Route path="/SELECTEDPRODUCTS">
              <SelectedProducts/>
            </Route>
+           <Route path="/ORDER">
+             <Order />
+           </Route>
            <Route path="/">
              <Home />
            </Route>
          </Switch>
-       </Router> 
+       </Router>  */}
        </Provider>
      </div>
   );

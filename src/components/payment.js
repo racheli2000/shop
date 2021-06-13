@@ -1,10 +1,12 @@
 
 import { useEffect, useRef, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import actions from "../redux/action";
 
 export default function Payment() {
   const Data = useSelector((state) => state.products);
   const [sum, setSum] = useState(0);
+  const dispatch= useDispatch();
 
   useEffect(() => {
 
@@ -15,8 +17,14 @@ export default function Payment() {
     setSum(s);
   }, []);
 
+  const sendOreder = () => {
+    dispatch(actions.saveOrder({selectedProducts: Data.selectedProducts, userId: Data.orderNumber}))
+
+  }
+
   return (
     <>
+    {sendOreder}
       {Data.selectedProducts.map((sp, index) => (
         <>
           <p>
