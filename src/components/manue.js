@@ -12,7 +12,7 @@ export default function Manue() {
 
       <Link to="/SELECTEDPRODUCTS"> MY PRODUCTS</Link>
 
-      <Link to="/ORDER"> ORDER</Link>
+      {/* <Link to="/ORDER"> ORDER</Link> */}
     </>
   );
 }

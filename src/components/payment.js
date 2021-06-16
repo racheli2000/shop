@@ -12,7 +12,7 @@ export default function Payment() {
 
     let s = 0;
     Data.selectedProducts.forEach((element) => {
-      s += element.price;
+      s += element.price*element.amount;
     });
     setSum(s);
   }, []);
